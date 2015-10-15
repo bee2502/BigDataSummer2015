@@ -26,7 +26,7 @@ api = tweepy.API(auth) #if using proxy based server,add an argument proxy="http:
 def getTweets(topic,PATH_TO_RAW_DATA,MAX_TWEETS) :
 	auth=tweepy.OAuthHandler(API_KEY, API_SECRET)
 	auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-	api = tweepy.API(auth,proxy="http://u.padalkar:13908117@202.141.80.20:3128/") #if using proxy based server,add an argument proxy="http://username:pswrd@host:port/"
+	api = tweepy.API(auth,proxy="http://USERNAME:PASSWORD@HOSTNAME:PORT/") #if using proxy based server,add an argument proxy="http://username:pswrd@host:port/"
 	
 	for topic in topics :
 		print topic
